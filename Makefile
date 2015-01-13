@@ -5,5 +5,5 @@
 all: out/phybo
 
 out/phybo: src/main.cpp lua/src/liblua.a
-	clang -o $@ $< 
+	clang -o $@ $< -Llua/src/ -llua
 
